@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau truc dk 1</title>
+</head>
+<body>
+<button onclick="bai1() ">Bài 1</button>
+<br>
+<button onclick="bai2() ">Bài 2</button>
+<br>
+<button onclick="bai3() ">Bài 3</button>
+<br>
+<button onclick="bai4() ">Bài 4</button>
+<br>
+<button onclick="bai5() ">Bài 5</button>
+<br>
+<button onclick="bai6() ">Bài 6</button>
+<br>
+<script>
+    //bai1 nhập a và b, xem a có chia hết cho b ko?
+    function bai1() {
+        let a = prompt('nhập số thứ nhất ');
+        let b = prompt('nhập số thứ hai ');
+        if (a % b === 0) {
+            alert('a chia hết cho b');
+        } else {
+            alert('a không chia hết cho b');
+        }
+    }
+
+    //bai2 nhập tuổi và in kết quả nêú tuổi học sinh ko đủ tuổi vào lớp 10?
+    function bai2() {
+        let year = prompt('Hãy nhập số tuổi của bạn vào ');
+        if (year < 15) {
+            alert('Bạn chưa đủ điều kiện vào lớp 10');
+        } else {
+            alert('Bạn đã đủ điều kiện vào lớp 10');
+        }
+    }
+
+    //bai3 nhập 1 số nguyên bất kỳ và in kết quả ra màn hình
+    // để biết số đó lớn hay nhỏ hơn 0.
+    function bai3() {
+        let a = prompt('Hãy nhập số nguyên bất kỳ vào');
+        if (a > 0) {
+            alert('Là số nguyên dương');
+        } else {
+            alert('Là số nguyên âm');
+        }
+    }
+
+    //bai4 nhập 3 số nguyên và tìm giá trị lớn nhất của 3 số đó.
+    function bai4() {
+        let a = prompt('nhập số thứ nhất');
+        let b = prompt('nhập số thứ hai');
+        let c = prompt('nhập số thứ ba');
+        if (a > b) {
+            if (a > c) {
+                alert('a là số lớn nhất');
+            } else {
+                alert('c là số lớn nhất');
+            }
+        } else {
+            if (b > c) {
+                alert('b là số lớn nhất');
+            } else {
+                alert('c là số lớn nhất');
+            }
+        }
+    }
+
+    //bai5 xếp hạng học lực của học sinh dựa vào điểm bài kiểm tra,
+    // điểm thi giữa kỳ và điểm thi cuối kỳ.
+    /*function bai5() {
+        let a = parseInt(prompt('điểm bài kiểm tra').value);
+        let b = parseInt(prompt('điểm thi giữa kỳ').value);
+        let c = parseInt(prompt('điểm thi cuối kỳ').value);
+        let d = (a + b + c) / 3;
+        if (d > 8 && d <= 10) {
+            alert('Học lực giỏi');
+        } else if (d <= 8 && d >= 5) {
+            alert('Học lực khá');
+        } else {
+            alert('Học lực trung bình');
+        }
+    }*/
+    //
+    function bai6() {
+        var value = prompt('Điểm trung bình môn');
+        if (value > 8 && value <= 10) {
+            alert('Hoc lực giỏi');
+        } else if (value <= 8 && value >= 5) {
+            alert('Học lực khá');
+        } else {
+            alert('Học lực trung bình yếu');
+        }
+
+    }
+    </script>
+</body>
+</html>
